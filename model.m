@@ -1,8 +1,8 @@
 %% DC Converter - Small-Signal Averaged Model
 % model.m
-% State-space averaging and small-signal linearization for a buck converter
-% Author: <Reza Khodadadi>
-% Date: <2025-11-18>
+% State-space averaging and small-signal linearization for a boost converter
+% Author: <Your Name>
+% Date: <YYYY-MM-DD>
 
 clc; clear; close all;
 
@@ -75,4 +75,25 @@ DD = double([DD1 DD2]);
 
 % Create state-space and transfer functions
 sys = ss(A, B, CC, DD);
-H
+H = tf(sys);
+
+vo_vin = H(1, 1);
+vo_d   = H(1, 2);
+
+% Display results
+disp('Operating point:');
+fprintf(' IL = %.6f A\n VC = %.6f V\n', IL, VC);
+
+disp('State-space A matrix:'); disp(A);
+disp('State-space B matrix:'); disp(B);
+disp('Output matrix C:');      disp(CC);
+disp('Feedthrough D:');       disp(DD);
+
+disp('Transfer functions:');
+vo_vin, vo_d
+
+% Optional Bode plots
+figure;
+bode(vo_d); grid on; title('Bode of vo/d (control-to-output)');
+figure;
+bode(vo_vin); grid on; title('Bode of vo/vin (input-to-output)');
