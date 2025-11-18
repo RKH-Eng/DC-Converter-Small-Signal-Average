@@ -4,7 +4,7 @@ MATLAB implementation of state-space averaging and small-signal linearization fo
 
 # DC Converter Small Signal Average
 
-This repository contains a MATLAB implementation of state-space averaging and small-signal linearization for a DC-DC Boost Converter, including parasitic resistances and diode voltage drop.
+This repository contains a MATLAB implementation of state-space averaging and small-signal linearization for a DC-DC Buck Converter, including parasitic resistances and diode voltage drop.
 
 ## Features
 - Calculates steady-state DC operating point
