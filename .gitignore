@@ -1,0 +1,20 @@
+# MATLAB / Octave temporary files
+*.asv
+*.m~
+*.mat
+*.fig
+*.mlx
+*.mex*
+*.autosave
+
+# Simulink files
+*.slx
+*.mdl
+*.slxp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
