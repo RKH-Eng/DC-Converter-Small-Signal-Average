@@ -1,8 +1,8 @@
 %% DC Converter - Small-Signal Averaged Model
 % model.m
 % State-space averaging and small-signal linearization for a boost converter
-% Author: <Your Name>
-% Date: <YYYY-MM-DD>
+% Author: <Reza Khodadadi>
+% Date: <2025-11-18>
 
 clc; clear; close all;
 
